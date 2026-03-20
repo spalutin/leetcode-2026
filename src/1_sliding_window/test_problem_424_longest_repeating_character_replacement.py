@@ -31,7 +31,8 @@ test_cases = [
     ["ABCBACBA", 3, 6],
     ["ABAB", 2, 4],
     ["AABABBA", 1, 4],
-    ["ABBB", 1, 4]
+    ["ABBB", 1, 4],
+    ["BAAAB", 2, 5]
 ]
 
 
