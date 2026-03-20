@@ -1,6 +1,5 @@
-from unittest import TestCase
-
 from problem_3_longest_substring_without_repeating_characters import Solution
+
 test_cases = [
     ['', 0],
     ['a', 1],
@@ -25,9 +24,8 @@ test_cases = [
 ]
 
 
-
-class TestSolution(TestCase):
-    def test_length_of_longest_substring(self):
-        for [s, expected] in test_cases:
-            print('solving "{s}" -> {expected}'.format(s=s, expected=expected))
-            assert Solution().lengthOfLongestSubstring(s) == expected
+def test_length_of_longest_substring():
+    # print()
+    for [s, expected] in test_cases:
+        # print('solving "{s}" -> {expected}'.format(s=s, expected=expected))
+        assert Solution().lengthOfLongestSubstring(s) == expected
