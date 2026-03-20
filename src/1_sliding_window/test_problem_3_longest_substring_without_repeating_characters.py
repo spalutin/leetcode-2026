@@ -21,6 +21,7 @@ test_cases = [
     ['abcabcbb', 3],
     ['bbbbb', 1],
     ['pwwkew', 3],
+    ['tmmzuxt', 5],
 ]
 
 
