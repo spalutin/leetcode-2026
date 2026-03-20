@@ -21,6 +21,9 @@ move right until a number of c[right] != c[left] reaches k+1
 
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
+        return max(self.characterReplacementOneDirction(s, k), self.characterReplacementOneDirction(s[::-1], k))
+
+    def characterReplacementOneDirction(self, s: str | list[str], k: int) -> int:
         if not s:
             return 0
         size = len(s)

@@ -18,6 +18,9 @@ test_cases = [
     ["ABA", 0, 1],
     ["ABA", 1, 3],
     ["ABA", 2, 3],
+    ["ABB", 0, 2],
+    ["ABB", 1, 3],
+    ["ABB", 2, 3],
     ["ABCDEDCBA", 0, 1],
     ["ABCDEDCBA", 1, 3],
     ["ABCDEDCBA", 2, 4],
@@ -25,9 +28,10 @@ test_cases = [
     ["ABCBABCBA", 0, 1],
     ["ABCBACBA", 1, 3],
     ["ABCBACBA", 2, 4],
-    ["ABCBACBA", 3, 5],
+    ["ABCBACBA", 3, 6],
     ["ABAB", 2, 4],
-    ["AABABBA", 1, 4]
+    ["AABABBA", 1, 4],
+    ["ABBB", 1, 4]
 ]
 
 
