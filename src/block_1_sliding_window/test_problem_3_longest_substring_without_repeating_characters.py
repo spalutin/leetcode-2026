@@ -1,4 +1,4 @@
-from problem_3_longest_substring_without_repeating_characters import Solution
+from .problem_3_longest_substring_without_repeating_characters import Solution
 
 test_cases = [
     ['', 0],

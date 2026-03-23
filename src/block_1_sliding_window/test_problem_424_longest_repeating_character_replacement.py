@@ -1,4 +1,4 @@
-from problem_424_longest_repeating_character_replacement import Solution
+from .problem_424_longest_repeating_character_replacement import Solution
 
 test_cases = [
     ["ABCDEDCBA", 1, 3],
