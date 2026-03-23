@@ -37,7 +37,7 @@ test_cases = [
 
 
 def test_character_replacement():
-    print()
+    # print()
     for [s, k, expected] in test_cases:
-        print('solving "{s}", {k} -> {expected}'.format(s=s, k=k, expected=expected))
+        # print('solving "{s}", {k} -> {expected}'.format(s=s, k=k, expected=expected))
         assert Solution().characterReplacement(s, k) == expected
