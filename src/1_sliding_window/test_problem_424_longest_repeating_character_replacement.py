@@ -1,6 +1,18 @@
 from problem_424_longest_repeating_character_replacement import Solution
 
 test_cases = [
+    ["ABCDEDCBA", 1, 3],
+    ["ABCDEDCBA", 0, 1],
+    ["ABCDEDCBA", 2, 4],
+    ["ABCDEDCBA", 3, 5],
+    ["ABCBABCBA", 0, 1],
+    ["ABCBACBA", 1, 3],
+    ["ABCBACBA", 2, 4],
+    ["ABCBACBA", 3, 6],
+    ["ABAB", 2, 4],
+    ["AABABBA", 1, 4],
+    ["ABBB", 1, 4],
+    ["BAAAB", 2, 5],
     ["A", 0, 1],
     ["A", 1, 1],
     ["AB", 0, 1],
@@ -21,18 +33,6 @@ test_cases = [
     ["ABB", 0, 2],
     ["ABB", 1, 3],
     ["ABB", 2, 3],
-    ["ABCDEDCBA", 0, 1],
-    ["ABCDEDCBA", 1, 3],
-    ["ABCDEDCBA", 2, 4],
-    ["ABCDEDCBA", 3, 5],
-    ["ABCBABCBA", 0, 1],
-    ["ABCBACBA", 1, 3],
-    ["ABCBACBA", 2, 4],
-    ["ABCBACBA", 3, 6],
-    ["ABAB", 2, 4],
-    ["AABABBA", 1, 4],
-    ["ABBB", 1, 4],
-    ["BAAAB", 2, 5]
 ]
 
 

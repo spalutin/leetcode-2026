@@ -13,44 +13,31 @@ s in [A-Z]
 0 <= k <= len(s)
 
 max_size = 1
-in a cycle, left = 0, stop cycle when left + max_size > size
-in a cycle, right = left+1, stop cycle when reached end
-move right until a number of c[right] != c[left] reaches k+1
 """
 
 
 class Solution:
     def characterReplacement(self, s: str, k: int) -> int:
-        return max(self.characterReplacementOneDirction(s, k), self.characterReplacementOneDirction(s[::-1], k))
-
-    def characterReplacementOneDirction(self, s: str | list[str], k: int) -> int:
-        if not s:
-            return 0
+        # @todo solve again
         size = len(s)
 
-        if size - k < 2:
-            return size
-
-        max_size = 1
+        max_size = 0
+        sizes: dict[str, int] = dict()
         left, right = 0, 0
 
-        while left + max_size <= size:
-            counter = k
-            a = s[left]
-            right = left
+        while right < size:
+            y = s[right]
+            if y not in sizes:
+                sizes[y] = k
+            sizes[y] += 1
 
-            while right < size:
-                z = s[right]
+            max_size = max(max_size, sizes[y])
 
-                if z != a:
-                    counter -= 1
+            while right - left >= max_size:
+                x = s[left]
+                sizes[x] -= 1
+                left += 1
 
-                if counter < 0:
-                    break
+            right += 1
 
-                right += 1
-
-            max_size = max(max_size, right - left)
-            left += 1
-
-        return max_size
+        return min(size, max_size)
