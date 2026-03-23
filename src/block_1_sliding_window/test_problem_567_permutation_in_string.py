@@ -8,7 +8,7 @@ fixtures = [
 
 
 def test_check_inclusion():
-    print()
+    # print()
     for [s1, s2, expected] in fixtures:
-        print(s1, s2, expected)
+        # print(s1, s2, expected)
         assert Solution().checkInclusion(s1, s2) == expected
