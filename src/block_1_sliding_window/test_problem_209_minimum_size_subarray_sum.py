@@ -9,7 +9,7 @@ fixtures = [
 
 
 def test_min_sub_array_len():
-    print()
+    # print()
     for target, nums, expected in fixtures:
-        print(target, nums, expected)
+        # print(target, nums, expected)
         assert Solution().minSubArrayLen(target, nums) == expected
