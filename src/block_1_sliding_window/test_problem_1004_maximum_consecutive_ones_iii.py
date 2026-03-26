@@ -1,4 +1,4 @@
-from .problem_1006_maximum_consecutive_ones_iii import Solution
+from .problem_1004_maximum_consecutive_ones_iii import Solution
 
 fixtures = [
     [[1], 0, 1],
