@@ -8,6 +8,9 @@ where the product of all the elements in the subarray is strictly less than k.
 
 class Solution:
     def numSubarrayProductLessThanK(self, nums: list[int], k: int) -> int:
+        if k < 2:
+            return 0
+
         left = 0
         right = 0
         product = 1
