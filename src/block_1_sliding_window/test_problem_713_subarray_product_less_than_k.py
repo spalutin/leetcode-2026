@@ -8,7 +8,7 @@ fixtures = [
 
 
 def test_num_subarray_product_less_than_k():
-    print()
+    # print()
     for nums, k, expected in fixtures:
-        print(nums, k, expected)
+        # print(nums, k, expected)
         assert Solution().numSubarrayProductLessThanK(nums, k) == expected
