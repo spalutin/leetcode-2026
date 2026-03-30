@@ -17,7 +17,7 @@ class Solution:
 
             product *= nums[right]
 
-            while left < len(nums) and left < right and product >= k:
+            while left < right and product >= k:
                 product = product // nums[left]
                 left += 1
 
