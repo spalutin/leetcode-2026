@@ -16,7 +16,7 @@ class Solution:
         entries: dict[int, bool] = {}
 
         for x in nums:
-            if not x and not len(result) and x in entries:
+            if not x and not len(result) and x in entries and entries[x]:
                 result.append([0, 0, 0])
 
             entries[x] = x in entries
