@@ -11,7 +11,7 @@ fixtures = [
 ]
 
 
-def test_three_sum(debug=True):
+def test_three_sum(debug=False):
     for [nums, expected] in fixtures:
         if debug: print()
         if debug: print(nums, '->', expected)
