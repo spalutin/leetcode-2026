@@ -18,4 +18,32 @@ Constraints:
 
 class Solution:
     def fourSum(self, nums: list[int], target: int) -> list[list[int]]:
-        return []
+        result = set()
+        xx = sorted(nums)
+        hw = 0
+        kz = len(nums) - 1
+
+        print(xx)
+
+        while kz - hw > 2:
+            while kz - hw > 3 and xx[hw] + xx[hw + 1] + xx[hw + 2] + xx[kz - 1] > target:
+                kz -= 1
+
+            ix = hw + 1
+            jy = kz - 1
+
+            while ix < jy:
+                value = xx[hw] + xx[ix] + xx[jy] + xx[kz]
+                print((hw, ix, jy, kz), (xx[hw], xx[ix], xx[jy], xx[kz]), value)
+
+                if value == target:
+                    result.add((xx[hw], xx[ix], xx[jy], xx[kz]))
+
+                if value < target:
+                    ix += 1
+                else:
+                    jy -= 1
+
+            hw += 1
+
+        return [[x for x in xx] for xx in result]
