@@ -19,38 +19,36 @@ from pygments.lexers import j
 class Solution:
     def totalFruit(self, fruits: List[int]) -> int:
         size = len(fruits)
-
-        if size <= 2:
+        if size < 3:
             return size
-
-        result = 1
         ix = 0
-        jy = 1
-        changes = 0
+        jy = 0
         x = fruits[0]
         y = fruits[1]
-
-        while jy < size:
-            if fruits[jy] != fruits[jy - 1]:
-                if y == x:
-                    y = fruits[jy]
-                changes += 1
-
-                if fruits[jy] != x and fruits[jy] != y:
-                    if jy - ix > result:
-                        result = jy - ix
-
-                    while changes > 1:
-                        ix += 1
-                        if fruits[ix] != fruits[ix - 1]:
-                            changes -= 1
-
-                    x = y
-                    y = fruits[jy]
-
+        while y == x and jy < size:
+            y = fruits[jy]
             jy += 1
 
-        if jy - ix > result:
-            result = jy - ix
+        kz = jy + 1
+        result = kz - ix
+
+        while kz < size:
+
+            z = fruits[kz]
+
+            if z != fruits[jy]:
+                if z != x and z != y:
+                    if kz - ix > result:
+                        result = kz - ix
+                    x = fruits[jy]
+                    y = fruits[kz]
+                    ix = jy
+
+                jy = kz
+
+            kz += 1
+
+        if kz - ix > result:
+            result = kz - ix
 
         return result
