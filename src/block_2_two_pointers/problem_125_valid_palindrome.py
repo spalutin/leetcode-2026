@@ -15,12 +15,19 @@ Given a string `s`, return `true` if it is a **palindrome**, or `false` otherwis
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        xx = [x.lower() for x in s if x.isalnum()]
         ix = 0
-        jy = len(xx) - 1
+        jy = len(s) - 1
 
         while ix < jy:
-            if xx[ix] != xx[jy]:
+            if not s[ix].isalnum():
+                ix += 1
+                continue
+
+            if not s[jy].isalnum():
+                jy -= 1
+                continue
+
+            if s[ix].lower() != s[jy].lower():
                 return False
 
             ix += 1
