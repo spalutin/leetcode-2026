@@ -15,35 +15,15 @@ Given a string `s`, return `true` if it is a **palindrome**, or `false` otherwis
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
+        xx = [x.lower() for x in s if x.isalnum()]
         ix = 0
-        jy = len(s) - 1
+        jy = len(xx) - 1
+
         while ix < jy:
-            x = Solution.mapChar(s[ix])
-            y = Solution.mapChar(s[jy])
-
-            while not x and ix < jy:
-                ix += 1
-                x = Solution.mapChar(s[ix])
-
-            while not y and ix < jy:
-                jy -= 1
-                y = Solution.mapChar(s[jy])
-
-            if x != y:
+            if xx[ix] != xx[jy]:
                 return False
 
             ix += 1
             jy -= 1
 
         return True
-
-    @staticmethod
-    def mapChar(s: str) -> int:
-        x = ord(s)
-        if 48 <= x <= 57:
-            return x - 47
-        if 65 <= x <= 90:
-            return x - 54
-        if 97 <= x <= 122:
-            return x - 86
-        return 0
