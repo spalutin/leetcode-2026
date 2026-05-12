@@ -15,29 +15,26 @@ class Solution:
         if not head or not head.next or not head.next.next:
             return
 
-        hercules = tortoise = ListNode(next=head)
-        is_even = True
+        tortoise = hare = head
 
-        while tortoise:
-            is_even = not is_even
+        while hare.next and hare.next.next:
+            hare = hare.next.next
             tortoise = tortoise.next
-            if is_even:
-                hercules = hercules.next
 
-        tail = hercules.next
-        hercules.next = None
+        tail = tortoise.next
+        tortoise.next = None
+
         tortoise = None
-
         while tail:
-            hare = tail
+            tmp = tail
             tail = tail.next
+            tmp.next = tortoise
+            tortoise = tmp
+
+        hare = head
+
+        while hare:
+            tmp = hare.next
             hare.next = tortoise
-            tortoise = hare
-
-        hercules = head
-
-        while hercules:
-            hare = hercules.next
-            hercules.next = tortoise
-            hercules = tortoise
-            tortoise = hare
+            hare = tortoise
+            tortoise = tmp
