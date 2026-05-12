@@ -2,9 +2,9 @@ from typing import List
 
 
 class ListNode:
-    def __init__(self, x, y=None):
-        self.val = x
-        self.next = y
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
     def __str__(self):
         str_next = self.next and ('->' + str(self.next)) or ''
