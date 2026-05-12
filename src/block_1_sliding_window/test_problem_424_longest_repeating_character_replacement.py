@@ -36,7 +36,7 @@ test_cases = [
 ]
 
 
-def test_character_replacement(debug=True):
+def test_character_replacement(debug=False):
     if debug: print()
     for [s, k, expected] in test_cases:
         if debug: print('solving "{s}", {k} -> {expected}'.format(s=s, k=k, expected=expected))

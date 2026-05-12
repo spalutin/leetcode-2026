@@ -11,6 +11,12 @@ class ListNode:
         return str(self.val) + str_next
 
     @staticmethod
+    def to_list(head: ListNode | None) -> list:
+        if not head:
+            return []
+        return [head.val] + ListNode.to_list(head.next)
+
+    @staticmethod
     def from_list(xx: List[int]) -> ListNode | None:
         if not xx:
             return None
@@ -24,3 +30,4 @@ class ListNode:
 if __name__ == '__main__':
     lst = ListNode.from_list([1, 2, 3, 4, 5])
     print(lst)
+    print(ListNode.to_list(lst))
