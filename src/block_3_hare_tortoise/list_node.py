@@ -2,12 +2,12 @@ from typing import List
 
 
 class ListNode:
-    def __init__(self, x):
+    def __init__(self, x, y=None):
         self.val = x
-        self.next = None
+        self.next = y
 
     def __str__(self):
-        str_next = self.next and (' -> ' + str(self.next)) or ''
+        str_next = self.next and ('->' + str(self.next)) or ''
         return str(self.val) + str_next
 
     @staticmethod
@@ -20,11 +20,7 @@ class ListNode:
     def from_list(xx: List[int]) -> ListNode | None:
         if not xx:
             return None
-
-        head = ListNode(xx[0])
-        head.next = ListNode.from_list(xx[1:])
-
-        return head
+        return ListNode(xx[0], ListNode.from_list(xx[1:]))
 
 
 if __name__ == '__main__':

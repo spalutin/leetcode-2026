@@ -16,5 +16,4 @@ fixtures: list[tuple[list[int], int]] = [
 
 def test_find_duplicate():
     for nums, expected in fixtures:
-        print(nums, '->', expected)
         assert expected == Solution().findDuplicate(nums)
