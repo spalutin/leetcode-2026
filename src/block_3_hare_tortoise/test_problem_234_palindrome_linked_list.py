@@ -19,7 +19,7 @@ fixtures: list[tuple[list[int], bool]] = [
 ]
 
 
-def test_is_palindrome(debug=True):
+def test_is_palindrome(debug=False):
     if debug: print()
     for xx, expected in fixtures:
         head = ListNode.from_list(xx)
