@@ -1,4 +1,4 @@
-from block_4_binary_search__variants.problem_704_binary_search import Solution
+from block_4_binary_search.problem_704_binary_search import Solution
 
 fixtures: list[tuple[list[int], int, int]] = [
     ([1], 1, 0),
@@ -28,7 +28,7 @@ fixtures: list[tuple[list[int], int, int]] = [
 ]
 
 
-def test_search(debug=True):
+def test_search(debug=False):
     if debug: print()
     for nums, target, expected in fixtures:
         if debug: print(f'{nums}, {target} -> {expected}')
