@@ -9,6 +9,6 @@ fixtures: list[tuple[list[list[int]], int, bool]] = [
 def test_search_matrix(debug=False):
     if debug: print()
     for matrix, target, expected in fixtures:
-        print(matrix, target, '->', expected)
+        if debug: print(matrix, target, '->', expected)
         result = Solution().searchMatrix(matrix, target)
         assert result == expected
