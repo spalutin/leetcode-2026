@@ -17,7 +17,7 @@ fixtures: list[tuple[list[int], int]] = [
 ]
 
 
-def test_find_min(debug=True):
+def test_find_min(debug=False):
     for nums, expected in fixtures:
         if debug: print(f'{nums} -> {expected}')
         assert Solution().findMin(nums) == expected
