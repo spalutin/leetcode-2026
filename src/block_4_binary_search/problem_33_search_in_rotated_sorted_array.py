@@ -8,7 +8,6 @@ class Solution:
     def search(self, nums: List[int], target: int) -> int:
         size = len(nums)
         shift = self.find_shift(nums)
-        print('shift', shift)
         left = 0
         right = size - 1
 
