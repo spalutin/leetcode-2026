@@ -1,4 +1,4 @@
-from block_2_two_pointers.problem_18_4sum import Solution
+from b_2_two_pointers.problem_18_4sum import Solution
 
 fixtures: list[tuple[list[int], int, list[list[int]]]] = [
     ([-3, -1, 0, 2, 4, 5], 2, [[-3, -1, 2, 4]]),

@@ -1,4 +1,4 @@
-from block_2_two_pointers.problem_904_fruit_into_baskets import Solution
+from b_2_two_pointers.problem_904_fruit_into_baskets import Solution
 
 fixtures: list[tuple[list[int], int]] = [
     ([0], 1),

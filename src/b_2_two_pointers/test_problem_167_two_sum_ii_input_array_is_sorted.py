@@ -1,4 +1,4 @@
-from block_2_two_pointers.problem_167_two_sum_ii_input_array_is_sorted import Solution
+from b_2_two_pointers.problem_167_two_sum_ii_input_array_is_sorted import Solution
 
 fixtures: list[tuple[list[int], int, list[int]]] = [
     ([2, 7, 11, 15], 9, [1, 2]),

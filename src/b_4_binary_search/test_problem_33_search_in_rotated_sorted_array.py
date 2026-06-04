@@ -1,4 +1,4 @@
-from block_4_binary_search.problem_33_search_in_rotated_sorted_array import Solution
+from b_4_binary_search.problem_33_search_in_rotated_sorted_array import Solution
 
 fixtures: list[tuple[list[int], int, int]] = [
     ([-1, 0, 3, 5, 9, 12], 9, 4),

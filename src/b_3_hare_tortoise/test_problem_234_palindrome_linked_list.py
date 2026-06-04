@@ -1,5 +1,5 @@
-from block_3_hare_tortoise.list_node import ListNode
-from block_3_hare_tortoise.problem_234_palindrome_linked_list import Solution
+from b_3_hare_tortoise.list_node import ListNode
+from b_3_hare_tortoise.problem_234_palindrome_linked_list import Solution
 
 fixtures: list[tuple[list[int], bool]] = [
     ([1, 2, 3, 4, 5, 6, 7, 8, 9], False),

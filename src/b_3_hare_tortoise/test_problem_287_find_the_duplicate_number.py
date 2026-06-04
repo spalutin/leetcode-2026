@@ -1,4 +1,4 @@
-from block_3_hare_tortoise.problem_287_find_the_duplicate_number import Solution
+from b_3_hare_tortoise.problem_287_find_the_duplicate_number import Solution
 
 fixtures: list[tuple[list[int], int]] = [
     ([1, 1], 1),

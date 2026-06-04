@@ -1,5 +1,5 @@
-from block_3_hare_tortoise.list_node import ListNode
-from block_3_hare_tortoise.problem_143_reorder_list import Solution
+from b_3_hare_tortoise.list_node import ListNode
+from b_3_hare_tortoise.problem_143_reorder_list import Solution
 
 fixtures = [
     ([1], [1]),

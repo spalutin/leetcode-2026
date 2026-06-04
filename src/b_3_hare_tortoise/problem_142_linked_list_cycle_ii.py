@@ -1,6 +1,6 @@
 from typing import Optional
 
-from block_3_hare_tortoise.list_node import ListNode
+from b_3_hare_tortoise.list_node import ListNode
 
 
 class Solution:

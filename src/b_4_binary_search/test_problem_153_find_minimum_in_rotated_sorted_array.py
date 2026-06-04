@@ -1,4 +1,4 @@
-from block_4_binary_search.problem_153_find_minimum_in_rotated_sorted_array import Solution
+from b_4_binary_search.problem_153_find_minimum_in_rotated_sorted_array import Solution
 
 fixtures: list[tuple[list[int], int]] = [
     ([1], 1),

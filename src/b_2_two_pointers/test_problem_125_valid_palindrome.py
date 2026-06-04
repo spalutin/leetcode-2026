@@ -1,4 +1,4 @@
-from block_2_two_pointers.problem_125_valid_palindrome import Solution
+from b_2_two_pointers.problem_125_valid_palindrome import Solution
 
 fixtures: list[tuple[str, bool]] = [
     (" ", True),

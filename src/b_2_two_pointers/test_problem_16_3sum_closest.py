@@ -1,4 +1,4 @@
-from block_2_two_pointers.problem_16_3sum_closest import Solution
+from b_2_two_pointers.problem_16_3sum_closest import Solution
 
 fixtures = [
     [[-1, 2, 1, -4], 1, 2],

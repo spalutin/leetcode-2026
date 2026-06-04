@@ -1,4 +1,4 @@
-from block_4_binary_search.problem_35_search_insert_position import Solution
+from b_4_binary_search.problem_35_search_insert_position import Solution
 
 fixtures: list[tuple[list[int], int, int]] = [
     ([1, 3, 5, 6], 0, 0),

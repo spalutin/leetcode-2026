@@ -1,4 +1,4 @@
-from block_4_binary_search.problem_704_binary_search import Solution
+from b_4_binary_search.problem_704_binary_search import Solution
 
 fixtures: list[tuple[list[int], int, int]] = [
     ([1], 1, 0),

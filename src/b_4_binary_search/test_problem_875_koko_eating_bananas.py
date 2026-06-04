@@ -1,4 +1,4 @@
-from block_4_binary_search.problem_875_koko_eating_bananas import Solution
+from b_4_binary_search.problem_875_koko_eating_bananas import Solution
 
 fixtures: list[tuple[list[int], int, int]] = [
     ([3, 6, 7, 11], 8, 4),
