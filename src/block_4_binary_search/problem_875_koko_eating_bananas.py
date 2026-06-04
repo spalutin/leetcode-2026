@@ -4,7 +4,7 @@ from typing import List
 class Solution:
     def minEatingSpeed(self, piles: List[int], h: int) -> int:
         size = len(piles)
-        right = max(piles)
+        right = max(piles) // (h // size)
 
         if h == size:
             return right
